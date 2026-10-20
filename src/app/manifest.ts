@@ -2,6 +2,9 @@ import type { MetadataRoute } from "next";
 
 import { CLINIC } from "@/constants/site";
 
+/* Required by `output: "export"` so the file is generated at build time. */
+export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: CLINIC.name,

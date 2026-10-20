@@ -5,6 +5,8 @@ import { CLINIC, CONTACT } from "@/constants/site";
 export const alt = `${CLINIC.name} in Lokoja`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+/* Required by `output: "export"` so the image is generated at build time. */
+export const dynamic = "force-static";
 
 /** Social preview image. ImageResponse only allows a limited CSS subset. */
 export default function OpenGraphImage() {
